@@ -7,11 +7,11 @@
              4.) Set language to “Groovy”
              5.) Paste the following code snippet into the Script field: 
                   
-import static org.forgerock.json.JsonValue.field
-import static org.forgerock.json.JsonValue.json
-import static org.forgerock.json.JsonValue.object
+        import static org.forgerock.json.JsonValue.field
+        import static org.forgerock.json.JsonValue.json
+        import static org.forgerock.json.JsonValue.object
 
-return json(object(
+        return json(object(
         field("id", rawProfile.sub),
         field("displayName", rawProfile.name),
         field("givenName", rawProfile.given_name),
