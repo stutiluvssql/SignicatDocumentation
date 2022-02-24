@@ -24,7 +24,7 @@
         field("username", rawProfile.email)))
 
 
-#Configure idPs
+# Configure idPs
 	Services > Social Identity Provider Service > Secondary Configurations > Add a   
             Secondary Configuration > Select “Client configuration for provider that implement   
             Open ID Connect specifications” 
@@ -341,7 +341,7 @@ Once configuration is created, additional fields will be added. Fill out the
 Once configured the idPs should look like:
 
 
-#Authentication Tree
+# Authentication Tree
 In order to configure the Authentication tree, go to “Journeys” within the Platform. 
 
 Recreate the Authentication tree below:
