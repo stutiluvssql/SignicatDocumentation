@@ -7,7 +7,7 @@
              4.) Set language to “Groovy”
              5.) Paste the following code snippet into the Script field: 
                   
-import static org.forgerock.json.JsonValue.field
+<import static org.forgerock.json.JsonValue.field
 import static org.forgerock.json.JsonValue.json
 import static org.forgerock.json.JsonValue.object
 
@@ -18,7 +18,7 @@ return json(object(
         field("familyName", rawProfile.family_name ),
         field("fr-attr-str1", rawProfile.signicat.national_id),
         field("email", rawProfile.email),
-        field("username", rawProfile.email)))
+        field("username", rawProfile.email)))>
 
 
 #Configure idPs
