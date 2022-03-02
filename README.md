@@ -338,11 +338,117 @@ Once configuration is created, additional fields will be added. Fill out the
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
 
-Once configured the idPs should look like:
-
 
 # Authentication Tree
 In order to configure the Authentication tree, go to “Journeys” within the Platform. 
 
 Recreate the Authentication tree below:
 Configure each node’s settings
+Page Node:
+Platform Password > Password Attribute > password
+Platform Username > Username Attribute > userName
+Select Identity Provider > Select “Include Local Authentication” 
+Password Attribute > password 
+Identity Attribute > mail
+Social Provider Handler Node:
+Transformation Script > Normalized Profile to Managed User
+Username Attribute > userName
+Client Type > BROWSER
+Required Attributes Present: 
+Identity Resource > Must match identity resource of the current tree.
+               Page Node: 
+Attribute Collector > Attribute to Collect > givenName, sn, mail (make sure that these items are not space or comma separated, but added as separate items). 
+Select “All Attributes Required” and “Validate Input” 
+Identity Attribute > userName 
+
+# Testing
+For testing this flow, paste the Preview URL into an address string in an incognito window. If you have an Entry account, you will be redirected back after you have logged in.
+All users in your Workspace should be able to log in to your ForgeRock instance.
+Once configured the idPs should look like:
+
+
+# idP Specific Test User Information/Instructions:
+
+Norwegian BankID
+Test user guide: https://developer.signicat.com/enterprise/identity-methods/norwegian-bankid.html#test-information
+
+In the above overview, there are some static test users which can be used. There is also a webpage (https://ra-preprod.bankidnorge.no/#/search/endUser) where one can create additional test users, by going to "test number generator", press "generate number", and then enter a name and a BankID friendly name (can be whatever), and lastly "order". Test users created here all have user ID equal to the generated test number, one time code equal to "otp", and personal password equal to "qwer1234". On the authorize URL at Signicat, one simply enters the generated national ID number ("user ID"), then the one time code ("otp") and lastly the personal password ("qwer1234") when prompted for it.
+
+Norwegian BankID Mobile
+Contact support@signicat.com to order (physical) test SIM cards. These will be shipped per mail (usually takes 1-2 weeks from they are ordered until they arrive at the destination). Once the SIM card is received, it can be installed in a mobile device. Each SIM card has a Norwegian phone number, a date of birth (user identifier) and a 4-digit PIN code attached to it (these credentials are on a printed letter in the SIM card shipment). In order to perform the identification, simply enter the test phone number and the test date of birth in the mobile BankID dialog (on the authorize URL to Signicat), and then enter a 4-digit PIN code in the dialog that automatically will pop up on the mobile device (no app installation required).
+
+iDIN
+In the eID view (on the authorize URL), select bank "Rabobank iDIN issuer simulatie", which will then emulate a static test response and proceed to redirect URL with an authorization response code. 
+	
+Swedish BankID
+
+1. Download the Swedish BankID app: https://play.google.com/store/apps/details?id=com.bankid.bus&hl=sv&gl=US  or https://apps.apple.com/se/app/bankid-s%C3%A4kerhetsapp/id433151512 
+2. Create a valid, yet fake, Swedish national ID number. For instance personnummer.nu can give you such a number based on an input date of birth in the format YY-MM-DD: https://www.personnummer.nu/
+3. Map the created national ID number created in the previous step, to the required BankID format. The national ID number generated in the previous step is on the format YYMMDD-XXXX, whereas the required format by BankID is YYYYMMDDXXXX.
+4. Go to https://demo.bankid.com/, “Generate code” to order personal code, get a code per email, and then log into demo.bankid.com using that code
+5. Once logged into demo.bankid.com, click “issue BankID for test”, enter the (mapped) national ID number you created and mapped under steps 2) and 3) above, and then also follow their configuration guide there for how to configure the app for testing. This requires opening the app and scanning an activation QR code.
+ 
+On the authorize URL at Signicat, select "mobile", then enter the created national ID number in the required format (YYYYMMDDXXXX), and open the mobile BankID app. In the app, you will be prompted for either the selected PIN code (as per activation guide above) or for a biometric authentication on the mobile device (if activated in the app).
+
+MitID
+Test users can be created and used from this page: 
+
+https://pp.mitid.dk/test-tool/frontend/#/create-identity 
+
+A further explanation of how to use this tool follows below:
+
+In order to create a new test user, one can fill out custom data, or have some data autofilled. We recommend using the autofill function: click the button "autofill" without altering any of the filled-in options on the page, and wait a few seconds (it hangs a bit before the data are filled out in the form). After a few seconds, a username should appear in the "identity claim" field in the form, and some other data should also have been filled further down in the form. Next, click the "create identity" button next to the "autofill" button. This is what persists the newly filled in test user data. This operation also "hangs" a few seconds, before one is redirected to a landing page with an overview of the newly created user. The "identity claim"/username is used for later lookup on this webpage, when you want to apply the test user. Store the "identity claim"/username (as well as other on this page somewhere for later use). 
+
+ to the test page at https://pp.mitid.dk/test-tool/frontend/#/view-identity and click "open simulator" for the test user you want to apply. If there is no test user loaded already on the webpage, then you can use the search bar in the top right corner to lookup the user by entering the "identity claim" created in step 1. When you hit the authorize URL at Signicat, and the MitID dialog starts, one is prompted for the "identity claim". Enter the "identity claim"/username that was created in step 1 and click "Continue".  Then, on the test webpage, select the link "open simulator" under the "App" section below the overview of the identity attributes. This should open a popup window ("App simulator"), and once the "identity claim" is entered into the authorize URL at Signicat (the MitID dialog), then this popup window should show an option with a green button with the label "confirm", to approve the authentication transaction. Once you click "confirm", then you should on the authorize URL be redirected back to the redirect URL with a response code, and the authentication process is finished."
+
+NemID
+Contact support@signicat.com to get static test users. Each static test user comes with 1) a national ID number ("CPR number"), 2) an alias (username), 3) a password and 4) a static OTP card with a given number of one-time codes. When performing a NemID authentication on the authorize URL at Signicat, both the alias, the password and an OTP code are required (which exact OTP code to use is randomly selected in the dialog after entering alias+password).
+
+FTN
+Itsme
+Contact support@signicat.com to get a set of test users in an Excel file. Each test user needs to be activated in a "testflight" app downloaded to a unique device. Instructions for how to download app, and activate test users follow below:
+
+Download/installation:
+
+To download/update E2E itsme App, please use one of the 2 links depending on your smartphone OS:
+· itsme E2E - Android: https://install.appcenter.ms/orgs/bmid/apps/itsme-e2eandroid/
+distribution_groups/partners%20e2e 
+· itsme E2E - iOS: https://install.appcenter.ms/orgs/bmid/apps/itsme-e2eios/
+distribution_groups/partners%20e2e
+(please open these links directly on the dedicated mobile test device, in order to download the app)
+
+For iPhone users, you need to trust the Belgian Mobile ID NV issuer (Go to Settings/General/Profiles &
+Device Management)
+
+Enrollment: 
+
+Enrollment must be done via MyBank on a PC/Mac (use this link: https://e2emybank.labo.sixdots.be/ )
+
+Click on Aanmelden.Input the card number (cf. test account file you get from support@signicat.com), click on Aanmelden (not Openid or itsme - Login), click on "Create itsme account". Then, enter the test phone number (cf. test account file that you get from support@signicat.com). Then, click until you get an identification token (not a Response Code). Then, open the E2E mobile app on the test device. Lastly, enter the same test phone number (cf. test account file that you get from support@signicat.com), enter the token, and you should be enrolled.
+
+eHerkenning
+Success flow:
+Edit the values you’d like to see back in the response. None of the values have an impact on the flow
+Press SEND
+Legend:
+ServiceID: the service in the service catalog that has been used to log in
+Pseudo: specific and persistant ID to identify the person who has logged in. Use this ID to connect to your own AIM solution.
+KvK number: The Chamber of Commerce number of the company for which has been logged in
+Intermediate KvK number: The Chamber of Commerce number of the represented service buyer/intermediary – optional flow type in eHerkenning
+RSIN: alternative number to KvK, used to identify sole proprietorships
+
+Please ignore BSN, eHerkenning hasn’t been designed for this attribute.
+
+
+
+DigID 
+Select “DigID” in simulator
+Fill in a value in the field BSN
+Select the Level of Assurance that the authentication response should use
+Press SEND
+For testing purposes these values should be prepopulated. For further technical specifications, please see: https://www.logius.nl/sites/default/files/public/bestanden/diensten/DigiD/Koppelvlakspecificatie-SAML-DigiD.pdf
+Signicat’s DigiD knowledgebase: https://documentation.signicat.nl/knowledgebase/about-digid 
+More information about BSN: https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/what-is-a-citizen-service-number
+
+
+
