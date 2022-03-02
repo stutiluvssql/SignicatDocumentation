@@ -337,24 +337,24 @@ Once configuration is created, additional fields will be added. Fill out the
 # Authentication Tree
 In order to configure the Authentication tree, go to “Journeys” within the Platform. 
 
-Recreate the Authentication tree below:
-Configure each node’s settings
-Page Node:
-Platform Password > Password Attribute > password
-Platform Username > Username Attribute > userName
-Select Identity Provider > Select “Include Local Authentication” 
-Password Attribute > password 
-Identity Attribute > mail
-Social Provider Handler Node:
-Transformation Script > Normalized Profile to Managed User
-Username Attribute > userName
-Client Type > BROWSER
-Required Attributes Present: 
-Identity Resource > Must match identity resource of the current tree.
-               Page Node: 
-Attribute Collector > Attribute to Collect > givenName, sn, mail (make sure that these items are not space or comma separated, but added as separate items). 
-Select “All Attributes Required” and “Validate Input” 
-Identity Attribute > userName 
+#### Recreate the Authentication tree below: <br />
+Configure each node’s settings <br />
+#### Page Node: <br />
+Platform Password > Password Attribute > password <br />
+Platform Username > Username Attribute > userName <br />
+Select Identity Provider > Select “Include Local Authentication” <br />
+Password Attribute > password <br /> 
+Identity Attribute > mail <br />
+#### Social Provider Handler Node: <br />
+Transformation Script > Normalized Profile to Managed User <br />
+Username Attribute > userName <br />
+Client Type > BROWSER <br />
+#### Required Attributes Present: <br /> 
+Identity Resource > Must match identity resource of the current tree. <br />
+#### Page Node: <br /> 
+Attribute Collector > Attribute to Collect > givenName, sn, mail (make sure that these items are not space or comma separated, but added as separate items). <br /> 
+Select “All Attributes Required” and “Validate Input” <br /> 
+Identity Attribute > userName  
 
 # Testing
 For testing this flow, paste the Preview URL into an address string in an incognito window. If you have an Entry account, you will be redirected back after you have logged in.
