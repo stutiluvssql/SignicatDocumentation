@@ -47,6 +47,8 @@ UI Config Properties:
             buttonDisplayName > NorwegianBankID
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
 #eee;  border-color: #ccc;
+	
+	![](images/pic1.png)
 
 Transform Script: Select the script created in Step 1
 Click “Create” 
