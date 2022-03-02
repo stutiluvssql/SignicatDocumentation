@@ -25,12 +25,8 @@
 
 
 # Configure idPs
-	Services > Social Identity Provider Service > Secondary Configurations > Add a   
-            Secondary Configuration > Select “Client configuration for provider that implement   
-            Open ID Connect specifications” 
-            
-            Fill out the fields within “New oidcConfig configuration” according to the following. If  
-            not indicated, leave the field blank. 
+Services > Social Identity Provider Service > Secondary Configurations > Add a Secondary Configuration > Select “Client configuration for provider that implement   
+Open ID Connect specifications” Fill out the fields within “New oidcConfig configuration” according to the following. If not indicated, leave the field blank. 
                              
 1.) Norwegian BankID | Market Coverage: Norway
 Auth ID Key: sub
