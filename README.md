@@ -60,8 +60,7 @@ User Info Response Format: JSON <br />
 
 
 ### 2.) Norwegian BankID Mobile | Market Coverage: Norway
-Auth ID Key: sub <br />  
-Client ID: TBD(to be inserted per customer once customer has signed contract) <br />
+Auth ID Key: sub <br /> Client ID: TBD(to be inserted per customer once customer has signed contract) <br />
 Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize <br /> 
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token <br /> 
 User Profile Service URL: https://eu01.signicat.com/oidc/userinfo <br /> 
