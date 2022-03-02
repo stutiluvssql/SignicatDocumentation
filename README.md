@@ -29,7 +29,9 @@ Services > Social Identity Provider Service > Secondary Configurations > Add a S
 Open ID Connect specifications” Fill out the fields within “New oidcConfig configuration” according to the following. If not indicated, leave the field blank. 
                              
 1.) Norwegian BankID | Market Coverage: Norway
+
 Auth ID Key: sub
+
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token
