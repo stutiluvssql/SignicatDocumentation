@@ -59,7 +59,7 @@ Enable Native Nonce: Enabled <br />
 User Info Response Format: JSON <br />
 
 
-### 2.) Norwegian BankID Mobile | Market Coverage: Norway <br />
+### 2.) Norwegian BankID Mobile | Market Coverage: Norway
 Auth ID Key: sub <br />  
 Client ID: TBD(to be inserted per customer once customer has signed contract) <br />
 Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize <br /> 
@@ -88,7 +88,7 @@ PKCE Method: S256 <br />
 Enable Native Nonce: Enabled <br />
 User Info Response Format: JSON <br />
 
-### 3.) iDIN | Market Coverage: The Netherlands <br />
+### 3.) iDIN | Market Coverage: The Netherlands 
 Auth ID Key: sub <br />
 Client ID: <to be inserted per customer once customer has signed contract> <br />
 Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize <br />
@@ -143,55 +143,53 @@ Once configuration is created, additional fields will be added. Fill out the fol
 Client Secret: <to be inserted per customer once customer has signed contract> <br />
 Client Authentication Method: CLIENT_SECRET_BASIC <br />
 PKCE Method: S256 <br />
-Enable Native Nonce: Enabled <br />
-		User Info Response Format: JSON
+Enable Native Nonce: Enabled  <br />
+User Info Response Format: JSON <br />
+	
 ### 5.) MitID | Market Coverage: Denmark
-Auth ID Key: sub
-Client ID: <to be inserted per customer once customer has signed contract>
-Authentication Endpoint URL:https://id.signicat.com/oidc/authorize 
-Access Token Endpoint URL:https://id.signicat.com/oidc/token 
-User Profile Service URL:https://id.signicat.com/oidc/userinfo
-Redirect URL: <to be inserted per customer once customer has signed contract>
-Scope Delimiter: Put a single space (“ “)
-OAuth Scopes:openid, profile, mitid, signicat.national_id make sure that these items are not space or comma 
-separated, but added as separate items. 
-ACR Values: urn:signicat:oidc:method:mitid-cpr
-Well Known Endpoint: https://id.signicat.com/oidc/.well-known/openid-configuration
-Issuer: https://id.signicat.com/oidc 
-JWKS URI Endpoint:https://id.signicat.com/oidc/jwks.json 
-UI Config Properties:
+Auth ID Key: sub <br />
+Client ID: <to be inserted per customer once customer has signed contract> <br />
+Authentication Endpoint URL:https://id.signicat.com/oidc/authorize <br /> 
+Access Token Endpoint URL:https://id.signicat.com/oidc/token <br /> 
+User Profile Service URL:https://id.signicat.com/oidc/userinfo <br />
+Redirect URL: <to be inserted per customer once customer has signed contract> <br />
+Scope Delimiter: Put a single space (“ “) <br />
+OAuth Scopes:openid, profile, mitid, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. <br /> 
+ACR Values: urn:signicat:oidc:method:mitid-cpr <br />
+Well Known Endpoint: https://id.signicat.com/oidc/.well-known/openid-configuration <br />
+Issuer: https://id.signicat.com/oidc <br /> 
+JWKS URI Endpoint:https://id.signicat.com/oidc/jwks.json <br /> 
+UI Config Properties: <br />
       Create following keys and corresponding values:
-            buttonImage > https://lh3.googleusercontent.com/PWhTl7A9YTClB6bQ3GWZkNcLbqrhmYOzAn34RflmRrk6ayXEjrotXyWoz5_-ZWzPgNd3wtGEbc8EJyupHbhcs998To3ccKaKVQPcYtohMf-wHE5aUtS-7P9i83L2BxGjxG97NL-yoOrygHlRLLZMnnLJL3_OQPSHn23NJb943ridSwTqlEkzMptNTpJWKdlCpiUur06RhvNHY7JxE9QQLMcR08AkE1JJVqeAIfWIn2uixINVScR_ap7xqsJxDWOlP2-YebkvqyArI1wU18xN22BhHViYu0-XWApn_QejDv8xjEOwLJijHiaO0BfHPs4z-GCV3kcT5-NAgEShrwVYxk1ihAHrGf76jErZ5vVNPeoU_2q0hGQnxrig1UXfZF4K7Thn2iOI81rg0d8c6J_3zIE2NiKt0-GK6hmb9OszvKeRxTMq2VSTjb513c1oT66NA4Oh5BnKwTzZg4a98fNmEi_AtmfP6j8LQCnqj2HLVJhkrpvBVonPs-vzBjP5VUZQKFdXULkkG6dlmx88smqdzmpg3Xp3O54pTjfixcUNlRr-ZL2-OvvOWSWa2eLeSum38K15-Cdisme_c9bCMUroXHj-3f4xPEscAdY0eUmJXPR1ecru3iOpVkjxRo_Jabe-Uc2h4rMN5Fu00V5HAmYW8yusR55s19Pt9tLlPQUhI1BJyMcXi-c-zdmfpcppMrnAV8c711grRb7aBzBUKFQq5Q=w200-h80-no?authuser=0
-            buttonDisplayName > MitID
-buttonCustomStyleHolder > color: #6d6d6d; background-color: 
-#eee;  border-color: #ccc;
-Transform Script: Select the script created in Step 1
-Click “Create” 
+            buttonImage > https://lh3.googleusercontent.com/PWhTl7A9YTClB6bQ3GWZkNcLbqrhmYOzAn34RflmRrk6ayXEjrotXyWoz5_-ZWzPgNd3wtGEbc8EJyupHbhcs998To3ccKaKVQPcYtohMf-wHE5aUtS-7P9i83L2BxGjxG97NL-yoOrygHlRLLZMnnLJL3_OQPSHn23NJb943ridSwTqlEkzMptNTpJWKdlCpiUur06RhvNHY7JxE9QQLMcR08AkE1JJVqeAIfWIn2uixINVScR_ap7xqsJxDWOlP2-YebkvqyArI1wU18xN22BhHViYu0-XWApn_QejDv8xjEOwLJijHiaO0BfHPs4z-GCV3kcT5-NAgEShrwVYxk1ihAHrGf76jErZ5vVNPeoU_2q0hGQnxrig1UXfZF4K7Thn2iOI81rg0d8c6J_3zIE2NiKt0-GK6hmb9OszvKeRxTMq2VSTjb513c1oT66NA4Oh5BnKwTzZg4a98fNmEi_AtmfP6j8LQCnqj2HLVJhkrpvBVonPs-vzBjP5VUZQKFdXULkkG6dlmx88smqdzmpg3Xp3O54pTjfixcUNlRr-ZL2-OvvOWSWa2eLeSum38K15-Cdisme_c9bCMUroXHj-3f4xPEscAdY0eUmJXPR1ecru3iOpVkjxRo_Jabe-Uc2h4rMN5Fu00V5HAmYW8yusR55s19Pt9tLlPQUhI1BJyMcXi-c-zdmfpcppMrnAV8c711grRb7aBzBUKFQq5Q=w200-h80-no?authuser=0 <br />
+            buttonDisplayName > MitID <br />
+buttonCustomStyleHolder > color: #6d6d6d; background-color: #eee;  border-color: #ccc; <br />
+Transform Script: Select the script created in Step 1 <br />
+Click “Create” <br /> 
 
-Once configuration is created, additional fields will be added. Fill out the 
-                       following: 
-         		Client Secret: <to be inserted per customer once customer has signed contract>
-		Client Authentication Method: CLIENT_SECRET_BASIC
-		PKCE Method: S256
-  		Enable Native Nonce: Enabled
-		User Info Response Format: JSON
+Once configuration is created, additional fields will be added. Fill out the following: <br /> 
+Client Secret: <to be inserted per customer once customer has signed contract>  <br />
+Client Authentication Method: CLIENT_SECRET_BASIC  <br />
+PKCE Method: S256  <br />
+Enable Native Nonce: Enabled  <br />
+User Info Response Format: JSON  <br />
 
 ###### 6.) NemID | Market Coverage: Denmark
-Auth ID Key: sub
-Client ID: <to be inserted per customer once customer has signed contract>
-Authentication Endpoint URL:https://id.signicat.com/oidc/authorize 
-Access Token Endpoint URL:https://id.signicat.com/oidc/token 
-User Profile Service URL: https://id.signicat.com/oidc/userinfo
-Redirect URL: <to be inserted per customer once customer has signed contract>
-Scope Delimiter: Put a single space (“ “)
-OAuth Scopes:openid, profile, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. 
-ACR Values:urn:signicat:oidc:method:nemid
-Well Known Endpoint: https://id.signicat.com/oidc/.well-known/openid-configuration
-Issuer:https://id.signicat.com/oidc 
-JWKS URI Endpoint:https://id.signicat.com/oidc/jwks.json 
-UI Config Properties:
-      Create following keys and corresponding values:
-            buttonImage > https://lh3.googleusercontent.com/UQt5LzXpcAaL4t_WlSNQz_lN2fhGTDBe-OmbnQC1T5ji0-zlRg3h7L-AfkABv8pb8RQeEOrqcO3TVF79gDSwnQzk18u_IZqO4K0aiXJq7khfMd2b9IZH1DMl4tuttZkR8b0OYjHIS26FuNJIjZ-cdzKaF4ddCIR39htrQfjDVW0tUCm-qBbU58LzI-UlPWxa79VejZrK9mStN2_NpRM-WJBAqnJmhM6v2w0nunPaWS9NTt9exQLnxw2dahpD7iWV6hhQaH0CaNUw4I-xGOCdgOCd5kfS1OKFxd2huWpjK3DJYpkl1tNGUylDOEiMCQNb4JNox8cPBnwVfnZ4ukiM2Ay82Q7ujUiAerjpDaueTKbqFJiuUrnC-hjWDFlypjNhi5eJ9eLz7_bcW79KBwn-z1oXr1zFCxyVhuTLqbstr-dU_YVwEr_3qaIykPRU1ZcSCdoDMZ0nGhX9SB2G5_Opfpd4l47UV1zdjtMTp_RET6dF4eYgd2gq4Oo_khyYAvB46Nsdgd2aJeDvWraMJ0hIPMJiXJeVPVRqoU1G1oo3iAZuM2mZTi7-xKAAFRbl2CB1vZUCWtXGY7yOTEjAcC0DqGd93nxx4UPktAeniXBg-r5YMUGathv99H1cFB32ADsMCi-86Ass654ucxXBwsgRT29fXP8Qg-FMUOUqIDzTBJC2y2-9ZrUxFrElVaRJbUfphzGc7MubMz0V3d_uScdN0A=w200-h80-no?authuser=0
+Auth ID Key: sub <br />
+Client ID: <to be inserted per customer once customer has signed contract> <br />
+Authentication Endpoint URL:https://id.signicat.com/oidc/authorize <br /> 
+Access Token Endpoint URL:https://id.signicat.com/oidc/token <br /> 
+User Profile Service URL: https://id.signicat.com/oidc/userinfo <br />
+Redirect URL: <to be inserted per customer once customer has signed contract> <br />
+Scope Delimiter: Put a single space (“ “) <br />
+OAuth Scopes:openid, profile, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. <br /> 
+ACR Values:urn:signicat:oidc:method:nemid <br />
+Well Known Endpoint: https://id.signicat.com/oidc/.well-known/openid-configuration <br />
+Issuer:https://id.signicat.com/oidc <br /> 
+JWKS URI Endpoint:https://id.signicat.com/oidc/jwks.json <br /> 
+UI Config Properties: <br />
+Create following keys and corresponding values: <br />
+buttonImage > https://lh3.googleusercontent.com/UQt5LzXpcAaL4t_WlSNQz_lN2fhGTDBe-OmbnQC1T5ji0-zlRg3h7L-AfkABv8pb8RQeEOrqcO3TVF79gDSwnQzk18u_IZqO4K0aiXJq7khfMd2b9IZH1DMl4tuttZkR8b0OYjHIS26FuNJIjZ-cdzKaF4ddCIR39htrQfjDVW0tUCm-qBbU58LzI-UlPWxa79VejZrK9mStN2_NpRM-WJBAqnJmhM6v2w0nunPaWS9NTt9exQLnxw2dahpD7iWV6hhQaH0CaNUw4I-xGOCdgOCd5kfS1OKFxd2huWpjK3DJYpkl1tNGUylDOEiMCQNb4JNox8cPBnwVfnZ4ukiM2Ay82Q7ujUiAerjpDaueTKbqFJiuUrnC-hjWDFlypjNhi5eJ9eLz7_bcW79KBwn-z1oXr1zFCxyVhuTLqbstr-dU_YVwEr_3qaIykPRU1ZcSCdoDMZ0nGhX9SB2G5_Opfpd4l47UV1zdjtMTp_RET6dF4eYgd2gq4Oo_khyYAvB46Nsdgd2aJeDvWraMJ0hIPMJiXJeVPVRqoU1G1oo3iAZuM2mZTi7-xKAAFRbl2CB1vZUCWtXGY7yOTEjAcC0DqGd93nxx4UPktAeniXBg-r5YMUGathv99H1cFB32ADsMCi-86Ass654ucxXBwsgRT29fXP8Qg-FMUOUqIDzTBJC2y2-9ZrUxFrElVaRJbUfphzGc7MubMz0V3d_uScdN0A=w200-h80-no?authuser=0
             buttonDisplayName > NemID
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
 #eee;  border-color: #ccc;
