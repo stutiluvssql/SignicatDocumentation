@@ -28,22 +28,36 @@
 Services > Social Identity Provider Service > Secondary Configurations > Add a Secondary Configuration > Select “Client configuration for provider that implement   
 Open ID Connect specifications” Fill out the fields within “New oidcConfig configuration” according to the following. If not indicated, leave the field blank. 
                              
-###### 1.) Norwegian BankID | Market Coverage: Norway
+### 1.) Norwegian BankID | Market Coverage: Norway
 
 Auth ID Key: sub
+
 Client ID: <to be inserted per customer once customer has signed contract>
+	
 Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
+	
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token
+	
 User Profile Service URL: https://eu01.signicat.com/oidc/userinfo
+	
 Redirect URL: <to be inserted per customer once customer has signed contract>
+	
 Scope Delimiter: Put a single space (“ “)
-OAuth Scopes: openid, profile, signicat.national_id make sure that these items are not space nor comma separated, but added as separate items. 
+	
+OAuth Scopes: openid, profile, signicat.national_id make sure that these items are not space nor comma separated, but added as separate items.
+	
 ACR Values: urn:signicat:oidc:method:nbid
+	
 Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration
+	
 Issuer: https://eu01.signicat.com/oidc 
+	
 JWKS URI Endpoint:https://eu01.signicat.com/oidc/jwks.json 
+	
 UI Config Properties:
+	
       Create following keys and corresponding values:
+	
             buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy4E8D-GQvMYxKa3WC90btokFC6JsEhid_SnBE9zVelUXp4Jc4GFnfumH3OvpWDkQmJLg-4rb39HO6StQKSB7VaUGVoe9JZu3JBBf3VoQn-fp0nOkl4u14A9vPOl5-QeY2YP41ARv1BamG8JY_k9hn6O8uWbt4JWUswHTfiKSBmCnarcEaOmD-LgiJ_kxr2yuNZY19zl4qczrIQDD0gdHDWetXnCok0_fITUiFiVHP9knECb0CEP2jNC8PjL00B1WsOMNahytB7OSVkugjvt4qgy_7zdslVkKN6ccL_KdD3yi3YpntOg9GSNEnReRCIRuxouvLKU_BASuYpac_XZqaiqqVjtwWTYp8IMvhEF3TQHuyaDuK8rLsxvibTTtA6-9Kz3hNxdGMN4pUkxfHms9l5OTOmFm86tOus6iEf77-QpylFfZm_AVuxCV7ahTKocyLpaHUZcCfWvR1I6dZyovLQmUEOJKAj7v4I5v3icii93LI2ZH-skYbg1fuOBZA-rxTkiXWItqAgZc7s65Rnjwfx2zA9dHJs6hUa_lrkwABLaUfpFeY44qcQNSWWDsyEMg1zKtkA8g1EtgUvHsHFoUVFqJlx81VsVc_54SPrFEUOLTOuUuhQY0kV89VvYHcmy8tw9Y1OGV3Os6-I_0DJmgVXjDQ60pM-jCCQWQgoqFjNYrgeBnSUnvSmg=w580-h345-no?authuser=0
             buttonDisplayName > NorwegianBankID
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
@@ -94,7 +108,7 @@ Once configuration is created, additional fields will be added. Fill out the
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
 
-###### 3.) iDIN | Market Coverage: The Netherlands
+### 3.) iDIN | Market Coverage: The Netherlands
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
@@ -125,7 +139,7 @@ Once configuration is created, additional fields will be added. Fill out the
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
 
-###### 4.) Swedish BankID | Market Coverage: Sweden
+### 4.) Swedish BankID | Market Coverage: Sweden
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize 
@@ -155,8 +169,7 @@ Once configuration is created, additional fields will be added. Fill out the
 		PKCE Method: S256
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
-
-###### 5.) MitID | Market Coverage: Denmark
+### 5.) MitID | Market Coverage: Denmark
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL:https://id.signicat.com/oidc/authorize 
