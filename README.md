@@ -78,77 +78,72 @@ buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy
 buttonDisplayName > Norwegian BankID Mobile <br />
 buttonCustomStyleHolder > color: #6d6d6d; background-color: #eee;  border-color: #ccc; <br />
 
-Transform Script: Select the script created in Step 1
-Click “Create” 
+Transform Script: Select the script created in Step 1 <br />
+Click “Create” <br /> 
 
-Once configuration is created, additional fields will be added. Fill out the 
-                       following: 
-         		Client Secret: <to be inserted per customer once customer has signed contract>
-		Client Authentication Method: CLIENT_SECRET_BASIC
-		PKCE Method: S256
-  		Enable Native Nonce: Enabled
-		User Info Response Format: JSON
+Once configuration is created, additional fields will be added. Fill out the following: <br /> 
+Client Secret: <to be inserted per customer once customer has signed contract> <br />
+Client Authentication Method: CLIENT_SECRET_BASIC <br />
+PKCE Method: S256 <br />
+Enable Native Nonce: Enabled <br />
+User Info Response Format: JSON <br />
 
-### 3.) iDIN | Market Coverage: The Netherlands
-Auth ID Key: sub
-Client ID: <to be inserted per customer once customer has signed contract>
-Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
-Access Token Endpoint URL: https://eu01.signicat.com/oidc/token 
-User Profile Service URL: https://eu01.signicat.com/oidc/userinfo 
-Redirect URL: <to be inserted per customer once customer has signed contract>
-Scope Delimiter: Put a single space (“ “)
-OAuth Scopes: openid, profile, signicat.idin, signicat.national_id make sure that these items are not space or comma 
-separated, but added as separate items. 
-ACR Values: urn:signicat:oidc:method:idin-ident
-Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration
-Issuer: https://eu01.signicat.com/oidc 
-JWKS URI Endpoint: https://eu01.signicat.com/oidc/jwks.json 
-UI Config Properties:
-      Create following keys and corresponding values:
-            buttonImage > https://lh3.googleusercontent.com/RVexAHF07dTuojYLmJ-oKx52EYr6RqwR6xkC5FgbhHDO0rjppjXllNOW7Au8aI21h6M8hb82BXuWtQ6q9KFnRzDTOVWgjdsCmKVc6WvnfRl761drgDWHeAyI1-sFM7nP03UdBELEz8vgwMVElRzXevHqVqNrU37e32bbnBAWTzfW8UuMb5ARlpxqySKKkS8ErZolPyZL9Cvnq6QXadBXkgomzjR5GpFNDIVNM1dWprQYKKEMr7Lp0EPEAB0r-DcHnJYoh3nrJnv3sCzrNuK-h0gcHxBFmKSHaCu-nKydX0pzj2aPDBRAcX_jJK6x5otOt6YDaSPcdnbevAbehQYH1yHOniP3NzggAoDqnQY8Kty0iXmkHIoHRqaEsgdNGNFHW5uFe8aaz4AvtUfRkrfR6O-gB880vU9WZcn23rQxK-bS7IcPzrSZmbEv3Nc8hMZxQYgvUgPhWgKNBHn_6FSw-XdSdw73XOrurP658gSUPJSgbBuJGzBGtfNQQZvZbCJ1wkrJwEwQnbpvGgUy5GQ-IU1c4ONVFrK7lREgcHi_4cHhlExEJ0kodH5M_FwmcwwQzWuNT1Jl4OjkE4kKi7GFq5eLhhqpsMEgZ1tTLKRWif6oJ6ZMrhGcMl37cYpF_et1bT_sy_9fKz9f_wRu_DVlsH8l9BfSS0B09EN40dkzU9c7ovNjYqH43aOlz6dv9y1mhUheY3wzyn82Hc691zEKOg=w1024-h903-no?authuser=0
-            buttonDisplayName > iDIN
+### 3.) iDIN | Market Coverage: The Netherlands <br />
+Auth ID Key: sub <br />
+Client ID: <to be inserted per customer once customer has signed contract> <br />
+Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize <br />
+Access Token Endpoint URL: https://eu01.signicat.com/oidc/token <br /> 
+User Profile Service URL: https://eu01.signicat.com/oidc/userinfo <br /> 
+Redirect URL: <to be inserted per customer once customer has signed contract> <br />
+Scope Delimiter: Put a single space (“ “) <br /> 
+OAuth Scopes: openid, profile, signicat.idin, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. <br /> 
+ACR Values: urn:signicat:oidc:method:idin-ident <br />
+Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration <br />
+Issuer: https://eu01.signicat.com/oidc <br /> 
+JWKS URI Endpoint: https://eu01.signicat.com/oidc/jwks.json <br /> 
+UI Config Properties: <br />
+Create following keys and corresponding values: <br />
+buttonImage > https://lh3.googleusercontent.com/RVexAHF07dTuojYLmJ-oKx52EYr6RqwR6xkC5FgbhHDO0rjppjXllNOW7Au8aI21h6M8hb82BXuWtQ6q9KFnRzDTOVWgjdsCmKVc6WvnfRl761drgDWHeAyI1-sFM7nP03UdBELEz8vgwMVElRzXevHqVqNrU37e32bbnBAWTzfW8UuMb5ARlpxqySKKkS8ErZolPyZL9Cvnq6QXadBXkgomzjR5GpFNDIVNM1dWprQYKKEMr7Lp0EPEAB0r-DcHnJYoh3nrJnv3sCzrNuK-h0gcHxBFmKSHaCu-nKydX0pzj2aPDBRAcX_jJK6x5otOt6YDaSPcdnbevAbehQYH1yHOniP3NzggAoDqnQY8Kty0iXmkHIoHRqaEsgdNGNFHW5uFe8aaz4AvtUfRkrfR6O-gB880vU9WZcn23rQxK-bS7IcPzrSZmbEv3Nc8hMZxQYgvUgPhWgKNBHn_6FSw-XdSdw73XOrurP658gSUPJSgbBuJGzBGtfNQQZvZbCJ1wkrJwEwQnbpvGgUy5GQ-IU1c4ONVFrK7lREgcHi_4cHhlExEJ0kodH5M_FwmcwwQzWuNT1Jl4OjkE4kKi7GFq5eLhhqpsMEgZ1tTLKRWif6oJ6ZMrhGcMl37cYpF_et1bT_sy_9fKz9f_wRu_DVlsH8l9BfSS0B09EN40dkzU9c7ovNjYqH43aOlz6dv9y1mhUheY3wzyn82Hc691zEKOg=w1024-h903-no?authuser=0 <br />
+buttonDisplayName > iDIN <br />
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
-#eee;  border-color: #ccc;
-Transform Script: Select the script created in Step 1
-Click “Create” 
+#eee;  border-color: #ccc; <br />
+Transform Script: Select the script created in Step 1 <br />
+Click “Create” <br /> 
 
-Once configuration is created, additional fields will be added. Fill out the 
-                       following: 
-         		Client Secret: <to be inserted per customer once customer has signed contract>
-		Client Authentication Method: CLIENT_SECRET_BASIC
-		PKCE Method: S256
-  		Enable Native Nonce: Enabled
-		User Info Response Format: JSON
+Once configuration is created, additional fields will be added. Fill out the following: <br /> 
+Client Secret: <to be inserted per customer once customer has signed contract> <br />
+Client Authentication Method: CLIENT_SECRET_BASIC <br />
+PKCE Method: S256 <br />
+Enable Native Nonce: Enabled <br />
+User Info Response Format: JSON <br />
 
-### 4.) Swedish BankID | Market Coverage: Sweden
-Auth ID Key: sub
-Client ID: <to be inserted per customer once customer has signed contract>
-Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize 
-Access Token Endpoint URL: https://eu01.signicat.com/oidc/token 
-User Profile Service URL: https://eu01.signicat.com/oidc/userinfo 
-Redirect URL: <to be inserted per customer once customer has signed contract>
-Scope Delimiter: Put a single space (“ “)
-OAuth Scopes:openid, profile, signicat.national_id make sure that these items are not space or comma 
-separated, but added as separate items. 
-ACR Values:urn:signicat:oidc:method:sbid
-Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration
-Issuer: https://eu01.signicat.com/oidc 
-JWKS URI Endpoint: https://eu01.signicat.com/oidc/jwks.json 
-UI Config Properties:
-      Create following keys and corresponding values:
-            buttonImage > https://lh3.googleusercontent.com/-g4A7p_0YvM-fiOkVzEbUvqhW1E4tNu5lR6HT3i7UBhWzXRJo3s6lXCzzc5xk0o-OwftGSqDtDRjYlGRbdxLIcrj2Ndg0ybNdnP0JGR40al43fqXhfXmNlgoOC88B6VNrhmM_pVusKN6yNcdmbAO72YCQvfTgqjBmbJMBZCwN_hnPOp5CqkmOjCHXo96CzocKz1DCzPsL7kCD0nwizLkt6WQKgJdFmXonblps5j184PCBkx8qWpssuVRgsx7zNsyC1kS4fq4f-2LABC66AyHnHexa-lMev_yzUh6RYwRo8EvYutQ69LNisPnN7CnsDnSPBLPXzzb2IKzi1q3yO9jF51nPnA-iXrRGO1fUX6xakiBGIWK6OHIiMAY7MPzeibApyUWMHFmMksDTafjlxbJNWJpy4nLZ_4G_hl7GJ_Mffw0m1yfAULf_2uSM1PvOF4IPx-pW4jL6YVX-CbkQCJv4-iOx67cfXDvbixcsSK9pD9pu5f1pQXm5C6MLndZb4teNhAZ-RiIPR3C8v15UJWL-1_lAKCuyeTUbXZA-CnUw4MXm77UBBSujoU37kyQ5GJhGe4pWIySi2VH6GnjCVMXz5gvArsVwDDYoKIM5-jGM8eLyejZFrPRKj23hlNpZovnqOTVIWi9nH5i4TcpJ_Lt7qzYNdsb_b6UhlgxB00JNQIBHM_MYJGD2JTFQ8jJdkVu37jUDFqEqbmy7eD047Bw6Q=w169-h158-no?authuser=0
-            buttonDisplayName > Swedish BankID
+### 4.) Swedish BankID | Market Coverage: Sweden <br />
+Auth ID Key: sub <br />
+Client ID: <to be inserted per customer once customer has signed contract> <br />
+Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize <br /> 
+Access Token Endpoint URL: https://eu01.signicat.com/oidc/token <br /> 
+User Profile Service URL: https://eu01.signicat.com/oidc/userinfo <br /> 
+Redirect URL: <to be inserted per customer once customer has signed contract> <br />
+Scope Delimiter: Put a single space (“ “) <br />
+OAuth Scopes:openid, profile, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. <br /> 
+ACR Values:urn:signicat:oidc:method:sbid <br />
+Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration <br />
+Issuer: https://eu01.signicat.com/oidc <br /> 
+JWKS URI Endpoint: https://eu01.signicat.com/oidc/jwks.json <br /> 
+UI Config Properties: <br />
+Create following keys and corresponding values: <br />
+buttonImage > https://lh3.googleusercontent.com/-g4A7p_0YvM-fiOkVzEbUvqhW1E4tNu5lR6HT3i7UBhWzXRJo3s6lXCzzc5xk0o-OwftGSqDtDRjYlGRbdxLIcrj2Ndg0ybNdnP0JGR40al43fqXhfXmNlgoOC88B6VNrhmM_pVusKN6yNcdmbAO72YCQvfTgqjBmbJMBZCwN_hnPOp5CqkmOjCHXo96CzocKz1DCzPsL7kCD0nwizLkt6WQKgJdFmXonblps5j184PCBkx8qWpssuVRgsx7zNsyC1kS4fq4f-2LABC66AyHnHexa-lMev_yzUh6RYwRo8EvYutQ69LNisPnN7CnsDnSPBLPXzzb2IKzi1q3yO9jF51nPnA-iXrRGO1fUX6xakiBGIWK6OHIiMAY7MPzeibApyUWMHFmMksDTafjlxbJNWJpy4nLZ_4G_hl7GJ_Mffw0m1yfAULf_2uSM1PvOF4IPx-pW4jL6YVX-CbkQCJv4-iOx67cfXDvbixcsSK9pD9pu5f1pQXm5C6MLndZb4teNhAZ-RiIPR3C8v15UJWL-1_lAKCuyeTUbXZA-CnUw4MXm77UBBSujoU37kyQ5GJhGe4pWIySi2VH6GnjCVMXz5gvArsVwDDYoKIM5-jGM8eLyejZFrPRKj23hlNpZovnqOTVIWi9nH5i4TcpJ_Lt7qzYNdsb_b6UhlgxB00JNQIBHM_MYJGD2JTFQ8jJdkVu37jUDFqEqbmy7eD047Bw6Q=w169-h158-no?authuser=0 <br />
+buttonDisplayName > Swedish BankID <br />
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
-#eee;  border-color: #ccc;
-Transform Script: Select the script created in Step 1
-Click “Create” 
+#eee;  border-color: #ccc; <br />
+Transform Script: Select the script created in Step 1 <br />
+Click “Create” <br /> 
 
-Once configuration is created, additional fields will be added. Fill out the 
-                       following: 
-         		Client Secret: <to be inserted per customer once customer has signed contract>
-		Client Authentication Method: CLIENT_SECRET_BASIC
-		PKCE Method: S256
-  		Enable Native Nonce: Enabled
+Once configuration is created, additional fields will be added. Fill out the following: <br /> 
+Client Secret: <to be inserted per customer once customer has signed contract> <br />
+Client Authentication Method: CLIENT_SECRET_BASIC <br />
+PKCE Method: S256 <br />
+Enable Native Nonce: Enabled <br />
 		User Info Response Format: JSON
 ### 5.) MitID | Market Coverage: Denmark
 Auth ID Key: sub
