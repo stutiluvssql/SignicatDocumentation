@@ -40,24 +40,24 @@ Issuer: https://eu01.signicat.com/oidc  <br />
 JWKS URI Endpoint:https://eu01.signicat.com/oidc/jwks.json <br />
 UI Config Properties: <br />
 	
-      Create following keys and corresponding values:
+Create following keys and corresponding values:
 	
-            buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy4E8D-GQvMYxKa3WC90btokFC6JsEhid_SnBE9zVelUXp4Jc4GFnfumH3OvpWDkQmJLg-4rb39HO6StQKSB7VaUGVoe9JZu3JBBf3VoQn-fp0nOkl4u14A9vPOl5-QeY2YP41ARv1BamG8JY_k9hn6O8uWbt4JWUswHTfiKSBmCnarcEaOmD-LgiJ_kxr2yuNZY19zl4qczrIQDD0gdHDWetXnCok0_fITUiFiVHP9knECb0CEP2jNC8PjL00B1WsOMNahytB7OSVkugjvt4qgy_7zdslVkKN6ccL_KdD3yi3YpntOg9GSNEnReRCIRuxouvLKU_BASuYpac_XZqaiqqVjtwWTYp8IMvhEF3TQHuyaDuK8rLsxvibTTtA6-9Kz3hNxdGMN4pUkxfHms9l5OTOmFm86tOus6iEf77-QpylFfZm_AVuxCV7ahTKocyLpaHUZcCfWvR1I6dZyovLQmUEOJKAj7v4I5v3icii93LI2ZH-skYbg1fuOBZA-rxTkiXWItqAgZc7s65Rnjwfx2zA9dHJs6hUa_lrkwABLaUfpFeY44qcQNSWWDsyEMg1zKtkA8g1EtgUvHsHFoUVFqJlx81VsVc_54SPrFEUOLTOuUuhQY0kV89VvYHcmy8tw9Y1OGV3Os6-I_0DJmgVXjDQ60pM-jCCQWQgoqFjNYrgeBnSUnvSmg=w580-h345-no?authuser=0 <br />
-            buttonDisplayName > NorwegianBankID <br />
+buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy4E8D-GQvMYxKa3WC90btokFC6JsEhid_SnBE9zVelUXp4Jc4GFnfumH3OvpWDkQmJLg-4rb39HO6StQKSB7VaUGVoe9JZu3JBBf3VoQn-fp0nOkl4u14A9vPOl5-QeY2YP41ARv1BamG8JY_k9hn6O8uWbt4JWUswHTfiKSBmCnarcEaOmD-LgiJ_kxr2yuNZY19zl4qczrIQDD0gdHDWetXnCok0_fITUiFiVHP9knECb0CEP2jNC8PjL00B1WsOMNahytB7OSVkugjvt4qgy_7zdslVkKN6ccL_KdD3yi3YpntOg9GSNEnReRCIRuxouvLKU_BASuYpac_XZqaiqqVjtwWTYp8IMvhEF3TQHuyaDuK8rLsxvibTTtA6-9Kz3hNxdGMN4pUkxfHms9l5OTOmFm86tOus6iEf77-QpylFfZm_AVuxCV7ahTKocyLpaHUZcCfWvR1I6dZyovLQmUEOJKAj7v4I5v3icii93LI2ZH-skYbg1fuOBZA-rxTkiXWItqAgZc7s65Rnjwfx2zA9dHJs6hUa_lrkwABLaUfpFeY44qcQNSWWDsyEMg1zKtkA8g1EtgUvHsHFoUVFqJlx81VsVc_54SPrFEUOLTOuUuhQY0kV89VvYHcmy8tw9Y1OGV3Os6-I_0DJmgVXjDQ60pM-jCCQWQgoqFjNYrgeBnSUnvSmg=w580-h345-no?authuser=0 <br />
+buttonDisplayName > NorwegianBankID <br />
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
 #eee;  border-color: #ccc;
+![](images/pic1.png)
 	
 
 Transform Script: Select the script created in Step 1
 Click “Create” 
 
-Once configuration is created, additional fields will be added. Fill out the 
-                       following: 
-         		Client Secret: <to be inserted per customer once customer has signed contract>
+Once configuration is created, additional fields will be added. Fill out the following: 
+Client Secret: <to be inserted per customer once customer has signed contract>
 Client Authentication Method: CLIENT_SECRET_BASIC
-		PKCE Method: S256
-  		Enable Native Nonce: Enabled
-		User Info Response Format: JSON
+PKCE Method: S256
+Enable Native Nonce: Enabled
+User Info Response Format: JSON
 
 
 ### 2.) Norwegian BankID Mobile | Market Coverage: Norway
@@ -80,7 +80,7 @@ buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy
 buttonDisplayName > Norwegian BankID Mobile
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
 #eee;  border-color: #ccc;
-![](images/pic1.png)
+
 Transform Script: Select the script created in Step 1
 Click “Create” 
 
@@ -339,6 +339,7 @@ Once configuration is created, additional fields will be added. Fill out the
 In order to configure the Authentication tree, go to “Journeys” within the Platform. 
 
 #### Recreate the Authentication tree below: <br />
+![](images/pic2.png)
 Configure each node’s settings <br />
 #### Page Node: <br />
 Platform Password > Password Attribute > password <br />
@@ -361,6 +362,7 @@ Identity Attribute > userName
 For testing this flow, paste the Preview URL into an address string in an incognito window. If you have an Entry account, you will be redirected back after you have logged in.
 All users in your Workspace should be able to log in to your ForgeRock instance.
 Once configured the idPs should look like:
+![](images/pic3.png)
 
 
 ## idP Specific Test User Information/Instructions:
@@ -434,7 +436,7 @@ Intermediate KvK number: The Chamber of Commerce number of the represented servi
 RSIN: alternative number to KvK, used to identify sole proprietorships
 
 Please ignore BSN, eHerkenning hasn’t been designed for this attribute.
-
+![](images/pic4.png)
 
 
 DigID 
@@ -445,6 +447,6 @@ Press SEND
 For testing purposes these values should be prepopulated. For further technical specifications, please see: https://www.logius.nl/sites/default/files/public/bestanden/diensten/DigiD/Koppelvlakspecificatie-SAML-DigiD.pdf
 Signicat’s DigiD knowledgebase: https://documentation.signicat.nl/knowledgebase/about-digid 
 More information about BSN: https://www.belastingdienst.nl/wps/wcm/connect/en/individuals/content/what-is-a-citizen-service-number
-
+![](images/pic5.png)
 
 
