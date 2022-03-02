@@ -320,7 +320,7 @@ Well Known Endpoint: <to be inserted per customer once PKIo certificate has been
 Issuer:
 JWKS URI Endpoint:
 UI Config Properties:
-      Create following keys and corresponding values:
+      Create following keys and corresponding values: 
             buttonImage > https://lh3.googleusercontent.com/d_WadULCtSEw9Ei62UZJgaZeUeix6Dy9GyHZYSIgF6BaOWaARcF4RCIE46qKd_wq11CQ6pDjP2PMVU9uPKEDVwbOwZl7TWcA_q_Gpxxk4Hxp136agJkgDbO53B5v09rfwgUei0rpZaVfrdnpoEtMiZi8B-m63P4lYbZvgVR1cxGVi2N7mkaq2e0qpHIGpt90egbC3FEoAeBKGBweH3zTnRbXwOPuW_bFImZkChkzclw0kwhciw4wWPk5GDS9-v5alGftunx87X6zkdX0BJj6ftaiAX205vkC3J8YzeIAAO6H3ltIJFrr_pRFZi1czbQjskBQZZcu2iWEcQCUeKyifsncDkcOaAJOeCiVR3gSCv-K6ZE1ZTZxWoW4p8PuVABHc-9N_r9IpGF7OUJ5e8nMiTMo43kZMzmz0zF40_HsYLeXSqguTKbK_mBO7HiQg-nT2iDPflxbkoays6fviSVapxa3qcBw6H-7g1NneLq2e8Hkgojdq9EgqR4I2fBhlb2AmxajkbNlLNzKOEBpPloi8XZZD0_qPLDet_4Q0PIps7vJ8Gt5SXtn_-jg1swYZR9HG-ture73dPmxrcLSyeqApzcQI_5k7qZWo0633MkhOZOnkpLL0tSyY000Wo4eljdaoWvld_HHiVgAlh6deu58-zodgP8RmUiNj7gH0LGZDwbj8ytkpTSR5QljqZYPJzCOEifRR-KilavKgmAMpqrUiw=s225-no?authuser=0
             buttonDisplayName > DigID
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
