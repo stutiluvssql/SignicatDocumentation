@@ -1,5 +1,5 @@
 # Signicat Documentation
-# Normalization Script
+## Normalization Script
 1.) Under the  “Native Consoles” tab open “Access Management” <br />
 2.) Select the Realm > Scripts > +New Script <br />
 3.) Name the Script(i.e “Signicat Profile Normalization”) > Script Type > Social Identity Profile Transformation <br />
@@ -20,7 +20,7 @@
         field("username", rawProfile.email)))
 
 
-# Configure idPs
+## Configure idPs
 Services > Social Identity Provider Service > Secondary Configurations > Add a Secondary Configuration > Select “Client configuration for provider that implement   
 Open ID Connect specifications” Fill out the fields within “New oidcConfig configuration” according to the following. If not indicated, leave the field blank. 
                              
