@@ -1,14 +1,10 @@
 # Signicat Documentation
 # Normalization Script
-1.) Under the  “Native Consoles” tab open “Access Management”
-
-2.) Select the Realm > Scripts > +New Script
-
-3.) Name the Script(i.e “Signicat Profile Normalization”) > Script Type > Social Identity Profile Transformation
-
-4.) Set language to “Groovy”
-
-5.) Paste the following code snippet into the Script field: 
+1.) Under the  “Native Consoles” tab open “Access Management” <br />
+2.) Select the Realm > Scripts > +New Script <br />
+3.) Name the Script(i.e “Signicat Profile Normalization”) > Script Type > Social Identity Profile Transformation <br />
+4.) Set language to “Groovy” <br />
+5.) Paste the following code snippet into the Script field: <br /> 
                   
         import static org.forgerock.json.JsonValue.field
         import static org.forgerock.json.JsonValue.json
