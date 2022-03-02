@@ -363,7 +363,7 @@ All users in your Workspace should be able to log in to your ForgeRock instance.
 Once configured the idPs should look like:
 
 
-# idP Specific Test User Information/Instructions:
+## idP Specific Test User Information/Instructions:
 
 Norwegian BankID
 Test user guide: https://developer.signicat.com/enterprise/identity-methods/norwegian-bankid.html#test-information
