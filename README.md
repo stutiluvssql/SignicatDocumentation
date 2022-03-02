@@ -207,16 +207,16 @@ Auth ID Key: sub <br />
 Client ID: <to be inserted per customer once customer has signed contract> <br />
 Authentication Endpoint URL:https://id.signicat.com/oidc/authorize <br />
 Access Token Endpoint URL:https://id.signicat.com/oidc/token <br />
-User Profile Service URL: https://id.signicat.com/oidc/userinfo
-Redirect URL: <to be inserted per customer once customer has signed contract>
-Scope Delimiter: Put a single space (“ “)
-OAuth Scopes:openid, profile, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. 
-ACR Values:urn:signicat:oidc:method:
-Well Known Endpoint: https://id.signicat.com/oidc/.well-known/openid-configuration
-Issuer:https://id.signicat.com/oidc 
-JWKS URI Endpoint:https://id.signicat.com/oidc/jwks.json 
-UI Config Properties:
-      Create following keys and corresponding values:
+User Profile Service URL: https://id.signicat.com/oidc/userinfo <br />
+Redirect URL: <to be inserted per customer once customer has signed contract> <br />
+Scope Delimiter: Put a single space (“ “) <br />
+OAuth Scopes:openid, profile, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. <br />
+ACR Values:urn:signicat:oidc:method: <br />
+Well Known Endpoint: https://id.signicat.com/oidc/.well-known/openid-configuration <br />
+Issuer:https://id.signicat.com/oidc <br /> 
+JWKS URI Endpoint:https://id.signicat.com/oidc/jwks.json <br /> 
+UI Config Properties: <br />
+      Create following keys and corresponding values: <br />
             buttonImage
             buttonDisplayName > FTN
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
