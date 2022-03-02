@@ -44,42 +44,39 @@ Create following keys and corresponding values:
 	
 buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy4E8D-GQvMYxKa3WC90btokFC6JsEhid_SnBE9zVelUXp4Jc4GFnfumH3OvpWDkQmJLg-4rb39HO6StQKSB7VaUGVoe9JZu3JBBf3VoQn-fp0nOkl4u14A9vPOl5-QeY2YP41ARv1BamG8JY_k9hn6O8uWbt4JWUswHTfiKSBmCnarcEaOmD-LgiJ_kxr2yuNZY19zl4qczrIQDD0gdHDWetXnCok0_fITUiFiVHP9knECb0CEP2jNC8PjL00B1WsOMNahytB7OSVkugjvt4qgy_7zdslVkKN6ccL_KdD3yi3YpntOg9GSNEnReRCIRuxouvLKU_BASuYpac_XZqaiqqVjtwWTYp8IMvhEF3TQHuyaDuK8rLsxvibTTtA6-9Kz3hNxdGMN4pUkxfHms9l5OTOmFm86tOus6iEf77-QpylFfZm_AVuxCV7ahTKocyLpaHUZcCfWvR1I6dZyovLQmUEOJKAj7v4I5v3icii93LI2ZH-skYbg1fuOBZA-rxTkiXWItqAgZc7s65Rnjwfx2zA9dHJs6hUa_lrkwABLaUfpFeY44qcQNSWWDsyEMg1zKtkA8g1EtgUvHsHFoUVFqJlx81VsVc_54SPrFEUOLTOuUuhQY0kV89VvYHcmy8tw9Y1OGV3Os6-I_0DJmgVXjDQ60pM-jCCQWQgoqFjNYrgeBnSUnvSmg=w580-h345-no?authuser=0 <br />
 buttonDisplayName > NorwegianBankID <br />
-buttonCustomStyleHolder > color: #6d6d6d; background-color: 
-#eee;  border-color: #ccc;
+buttonCustomStyleHolder > color: #6d6d6d; background-color: #eee;  border-color: #ccc; <br />
 ![](images/pic1.png)
 	
 
-Transform Script: Select the script created in Step 1
-Click “Create” 
+Transform Script: Select the script created in Step 1 <br />
+Click “Create” <br /> 
 
-Once configuration is created, additional fields will be added. Fill out the following: 
-Client Secret: <to be inserted per customer once customer has signed contract>
-Client Authentication Method: CLIENT_SECRET_BASIC
-PKCE Method: S256
-Enable Native Nonce: Enabled
-User Info Response Format: JSON
+Once configuration is created, additional fields will be added. Fill out the following: <br /> 
+Client Secret: <to be inserted per customer once customer has signed contract> <br />
+Client Authentication Method: CLIENT_SECRET_BASIC <br />
+PKCE Method: S256 <br />
+Enable Native Nonce: Enabled <br />
+User Info Response Format: JSON <br />
 
 
-### 2.) Norwegian BankID Mobile | Market Coverage: Norway
-Auth ID Key: sub  
-Client ID: TBD(to be inserted per customer once customer has signed contract)
-Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize 
-Access Token Endpoint URL: https://eu01.signicat.com/oidc/token 
-User Profile Service URL: https://eu01.signicat.com/oidc/userinfo 
-Redirect URL: TBD(to be inserted per customer once customer has signed contract)
-Scope Delimiter: Put a single space (“ “)
-OAuth Scopes: openid, profile, signicat.national_id make sure that these items are not space or comma 
-separated, but added as separate items. 
-ACR Values: urn:signicat:oidc:method:nbid-mobil
-Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration
-Issuer: https://eu01.signicat.com/oidc 
-JWKS URI Endpoint: https://eu01.signicat.com/oidc/jwks.json 
-UI Config Properties:
-Create following keys and corresponding values:
-buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy4E8D-GQvMYxKa3WC90btokFC6JsEhid_SnBE9zVelUXp4Jc4GFnfumH3OvpWDkQmJLg-4rb39HO6StQKSB7VaUGVoe9JZu3JBBf3VoQn-fp0nOkl4u14A9vPOl5-QeY2YP41ARv1BamG8JY_k9hn6O8uWbt4JWUswHTfiKSBmCnarcEaOmD-LgiJ_kxr2yuNZY19zl4qczrIQDD0gdHDWetXnCok0_fITUiFiVHP9knECb0CEP2jNC8PjL00B1WsOMNahytB7OSVkugjvt4qgy_7zdslVkKN6ccL_KdD3yi3YpntOg9GSNEnReRCIRuxouvLKU_BASuYpac_XZqaiqqVjtwWTYp8IMvhEF3TQHuyaDuK8rLsxvibTTtA6-9Kz3hNxdGMN4pUkxfHms9l5OTOmFm86tOus6iEf77-QpylFfZm_AVuxCV7ahTKocyLpaHUZcCfWvR1I6dZyovLQmUEOJKAj7v4I5v3icii93LI2ZH-skYbg1fuOBZA-rxTkiXWItqAgZc7s65Rnjwfx2zA9dHJs6hUa_lrkwABLaUfpFeY44qcQNSWWDsyEMg1zKtkA8g1EtgUvHsHFoUVFqJlx81VsVc_54SPrFEUOLTOuUuhQY0kV89VvYHcmy8tw9Y1OGV3Os6-I_0DJmgVXjDQ60pM-jCCQWQgoqFjNYrgeBnSUnvSmg=w580-h345-no?authuser=0
-buttonDisplayName > Norwegian BankID Mobile
-buttonCustomStyleHolder > color: #6d6d6d; background-color: 
-#eee;  border-color: #ccc;
+### 2.) Norwegian BankID Mobile | Market Coverage: Norway <br />
+Auth ID Key: sub <br />  
+Client ID: TBD(to be inserted per customer once customer has signed contract) <br />
+Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize <br /> 
+Access Token Endpoint URL: https://eu01.signicat.com/oidc/token <br /> 
+User Profile Service URL: https://eu01.signicat.com/oidc/userinfo <br /> 
+Redirect URL: TBD(to be inserted per customer once customer has signed contract) <br />
+Scope Delimiter: Put a single space (“ “) <br />
+OAuth Scopes: openid, profile, signicat.national_id make sure that these items are not space or comma separated, but added as separate items. <br /> 
+ACR Values: urn:signicat:oidc:method:nbid-mobil <br />
+Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration <br />
+Issuer: https://eu01.signicat.com/oidc <br /> 
+JWKS URI Endpoint: https://eu01.signicat.com/oidc/jwks.json <br /> 
+UI Config Properties: <br />
+Create following keys and corresponding values: <br />
+buttonImage > https://lh3.googleusercontent.com/me7f5GE1DciG-TzeV8U5g8qg8-bTKjjy4E8D-GQvMYxKa3WC90btokFC6JsEhid_SnBE9zVelUXp4Jc4GFnfumH3OvpWDkQmJLg-4rb39HO6StQKSB7VaUGVoe9JZu3JBBf3VoQn-fp0nOkl4u14A9vPOl5-QeY2YP41ARv1BamG8JY_k9hn6O8uWbt4JWUswHTfiKSBmCnarcEaOmD-LgiJ_kxr2yuNZY19zl4qczrIQDD0gdHDWetXnCok0_fITUiFiVHP9knECb0CEP2jNC8PjL00B1WsOMNahytB7OSVkugjvt4qgy_7zdslVkKN6ccL_KdD3yi3YpntOg9GSNEnReRCIRuxouvLKU_BASuYpac_XZqaiqqVjtwWTYp8IMvhEF3TQHuyaDuK8rLsxvibTTtA6-9Kz3hNxdGMN4pUkxfHms9l5OTOmFm86tOus6iEf77-QpylFfZm_AVuxCV7ahTKocyLpaHUZcCfWvR1I6dZyovLQmUEOJKAj7v4I5v3icii93LI2ZH-skYbg1fuOBZA-rxTkiXWItqAgZc7s65Rnjwfx2zA9dHJs6hUa_lrkwABLaUfpFeY44qcQNSWWDsyEMg1zKtkA8g1EtgUvHsHFoUVFqJlx81VsVc_54SPrFEUOLTOuUuhQY0kV89VvYHcmy8tw9Y1OGV3Os6-I_0DJmgVXjDQ60pM-jCCQWQgoqFjNYrgeBnSUnvSmg=w580-h345-no?authuser=0 <br />
+buttonDisplayName > Norwegian BankID Mobile <br />
+buttonCustomStyleHolder > color: #6d6d6d; background-color: #eee;  border-color: #ccc; <br />
 
 Transform Script: Select the script created in Step 1
 Click “Create” 
