@@ -48,7 +48,7 @@ UI Config Properties:
 buttonCustomStyleHolder > color: #6d6d6d; background-color: 
 #eee;  border-color: #ccc;
 	
-	![](images/pic1.png)
+	![](images/https://lh3.googleusercontent.com/Oz01YASuqszY_B9dMoBZNRCm-2NLfwkqvyR1_EcMhPDKxbfTPICIU9Tvx4DNNAP5xZWbUQQ=s170)
 
 Transform Script: Select the script created in Step 1
 Click “Create” 
