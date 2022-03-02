@@ -95,9 +95,9 @@ Once configuration is created, additional fields will be added. Fill out the
 		User Info Response Format: JSON
 
 3.) iDIN | Market Coverage: The Netherlands
-Auth ID Key: sub
-Client ID: <to be inserted per customer once customer has signed contract>
-Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize 
+Auth ID Key: sub__
+Client ID: <to be inserted per customer once customer has signed contract>__
+Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize__ 
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token 
 User Profile Service URL: https://eu01.signicat.com/oidc/userinfo 
 Redirect URL: <to be inserted per customer once customer has signed contract>
