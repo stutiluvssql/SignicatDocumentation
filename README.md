@@ -63,7 +63,7 @@ Client Authentication Method: CLIENT_SECRET_BASIC
 		User Info Response Format: JSON
 
 
-###### 2.) Norwegian BankID Mobile | Market Coverage: Norway
+### 2.) Norwegian BankID Mobile | Market Coverage: Norway
 Auth ID Key: sub  
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize 
