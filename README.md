@@ -30,17 +30,15 @@ Open ID Connect specifications” Fill out the fields within “New oidcConfig c
                              
 ### 1.) Norwegian BankID | Market Coverage: Norway
 
-Auth ID Key: sub
-
-Client ID: <to be inserted per customer once customer has signed contract>
-	
-Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
+  Auth ID Key: sub
+  Client ID: TBD(to be inserted per customer once customer has signed contract)
+  Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
 	
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token
 	
 User Profile Service URL: https://eu01.signicat.com/oidc/userinfo
 	
-Redirect URL: <to be inserted per customer once customer has signed contract>
+Redirect URL: TBD(to be inserted per customer once customer has signed contract)
 	
 Scope Delimiter: Put a single space (“ “)
 	
@@ -79,11 +77,11 @@ Client Authentication Method: CLIENT_SECRET_BASIC
 
 ### 2.) Norwegian BankID Mobile | Market Coverage: Norway
 Auth ID Key: sub  
-Client ID: <to be inserted per customer once customer has signed contract>
+Client ID: TBD(to be inserted per customer once customer has signed contract)
 Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize 
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token 
 User Profile Service URL: https://eu01.signicat.com/oidc/userinfo 
-Redirect URL: <to be inserted per customer once customer has signed contract>
+Redirect URL: TBD(to be inserted per customer once customer has signed contract)
 Scope Delimiter: Put a single space (“ “)
 OAuth Scopes: openid, profile, signicat.national_id make sure that these items are not space or comma 
 separated, but added as separate items. 
