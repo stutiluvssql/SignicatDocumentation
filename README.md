@@ -28,7 +28,7 @@
 Services > Social Identity Provider Service > Secondary Configurations > Add a Secondary Configuration > Select “Client configuration for provider that implement   
 Open ID Connect specifications” Fill out the fields within “New oidcConfig configuration” according to the following. If not indicated, leave the field blank. 
                              
-1.) Norwegian BankID | Market Coverage: Norway
+###### 1.) Norwegian BankID | Market Coverage: Norway
 
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
@@ -63,10 +63,10 @@ Client Authentication Method: CLIENT_SECRET_BASIC
 		User Info Response Format: JSON
 
 
-2.) Norwegian BankID Mobile | Market Coverage: Norway
-Auth ID Key: sub <br />
-Client ID: <to be inserted per customer once customer has signed contract> <br />
-Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize <br />
+###### 2.) Norwegian BankID Mobile | Market Coverage: Norway
+Auth ID Key: sub  
+Client ID: <to be inserted per customer once customer has signed contract>
+Authentication Endpoint URL:https://eu01.signicat.com/oidc/authorize 
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token 
 User Profile Service URL: https://eu01.signicat.com/oidc/userinfo 
 Redirect URL: <to be inserted per customer once customer has signed contract>
@@ -94,7 +94,7 @@ Once configuration is created, additional fields will be added. Fill out the
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
 
-3.) iDIN | Market Coverage: The Netherlands
+###### 3.) iDIN | Market Coverage: The Netherlands
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
@@ -125,7 +125,7 @@ Once configuration is created, additional fields will be added. Fill out the
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
 
-4.) Swedish BankID | Market Coverage: Sweden
+###### 4.) Swedish BankID | Market Coverage: Sweden
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize 
@@ -156,7 +156,7 @@ Once configuration is created, additional fields will be added. Fill out the
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
 
-5.) MitID | Market Coverage: Denmark
+###### 5.) MitID | Market Coverage: Denmark
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL:https://id.signicat.com/oidc/authorize 
@@ -187,7 +187,7 @@ Once configuration is created, additional fields will be added. Fill out the
   		Enable Native Nonce: Enabled
 		User Info Response Format: JSON
 
-6.) NemID | Market Coverage: Denmark
+###### 6.) NemID | Market Coverage: Denmark
 Auth ID Key: sub
 Client ID: <to be inserted per customer once customer has signed contract>
 Authentication Endpoint URL:https://id.signicat.com/oidc/authorize 
