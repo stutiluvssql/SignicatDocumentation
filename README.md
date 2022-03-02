@@ -30,28 +30,18 @@ Open ID Connect specifications” Fill out the fields within “New oidcConfig c
                              
 ### 1.) Norwegian BankID | Market Coverage: Norway
 
-  Auth ID Key: sub
-    Client ID: TBD(to be inserted per customer once customer has signed contract)
-  Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize
-	
+Auth ID Key: sub <br />
+Client ID: TBD(to be inserted per customer once customer has signed contract) <br />
+Authentication Endpoint URL: https://eu01.signicat.com/oidc/authorize <br />
 Access Token Endpoint URL: https://eu01.signicat.com/oidc/token
-	
 User Profile Service URL: https://eu01.signicat.com/oidc/userinfo
-	
 Redirect URL: TBD(to be inserted per customer once customer has signed contract)
-	
 Scope Delimiter: Put a single space (“ “)
-	
 OAuth Scopes: openid, profile, signicat.national_id make sure that these items are not space nor comma separated, but added as separate items.
-	
 ACR Values: urn:signicat:oidc:method:nbid
-	
 Well Known Endpoint: https://eu01.signicat.com/oidc/.well-known/openid-configuration
-	
 Issuer: https://eu01.signicat.com/oidc 
-	
 JWKS URI Endpoint:https://eu01.signicat.com/oidc/jwks.json 
-	
 UI Config Properties:
 	
       Create following keys and corresponding values:
